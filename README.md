@@ -1,4 +1,4 @@
 # svozov
 brainfuck-like language
-easier than the original brainfuck?
+harder than assembly?
 usable only on linux for now, all information is available in docs.txt
