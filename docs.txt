@@ -1,0 +1,50 @@
+1.1:
+    you need to install specific tools so build can run (prefered os is debian or slopbuntu)
+    tools list:
+        - gcc-multilib
+        - qemu-system-i386
+        - build-essential
+        - python3
+
+1.2:
+    how to write in this language
+    it's a brainfuck like language so it's not much diffrent but diffrence is that there is no default brainfuck syntax
+    instead there is only "svo" and "zsy" and important instructions are:
+    (all listed in the compiler ~/svozovc)
+    - "svosvosvo": "ptr++;"
+    - "svosvozsy": "ptr--;"
+    - "svozsysvo": "++*ptr;"
+    - "svozsyzsy": "--*ptr;"
+    - "zsysvosvo": "putchar(*ptr);"
+    - "zsysvozsy": "*ptr=getchar();"
+    - "zsyzsysvo": "while (*ptr) {"
+    - "zsyzsyzsy": "}"
+
+    gl on learning the synax lmao
+
+1.3:
+    how to compile
+    there are 2 options:
+    - util
+    - main compiler
+    util (svozovcutil) is plain bash script and to compile you need to type: svozovcutil --compile <filename>.svo
+    and you can also clean and run using the same util:
+    svozovcutil --clean <-- cleans all .zsy binaries
+    svozovcutil --run <filename>.zsy <-- runs selected binary (also you can just execute it with ./*.zsy)
+
+2.1:
+    operating system
+    since brainfuck can do anything svozov can also do anything so making os is a real thing
+    since main compiler can't actually make an os you need to go in "~/osware" folder, this folder contains compiler that can
+    produce a bootable .bin and util has the same abilities as main util and you always can type "./svozovcutil --help" to list all commands
+    of the util.
+    example os is in "~/osware/os.svo" and it should print "Hello" but i fucked up and it prints "4ello<some special bios symbol>"
+    well you get the idea
+
+2.2:
+    developing
+    idk if you want you can grab the source code and modify it to your liking
+
+mentions/devs:
+    - me :P (mstarmodder(Ms Tar))
+    - nobody
